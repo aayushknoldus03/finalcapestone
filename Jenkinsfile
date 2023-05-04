@@ -12,6 +12,11 @@ pipeline {
                 sh 'tar -cvf app.tar app.py'
             }
         }
+        stage('trigger development') {
+            steps {
+                build 'development'
+            }
+        }
 //         stage('Building Docker Image') {
 //             steps {
 //                 sh 'docker build -t aayush0307/pythonmyapp:V.${BUILD_NUMBER} .'
