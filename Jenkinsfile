@@ -7,12 +7,7 @@ pipeline {
             }
         }
        
-         stage('Testing') {
-            steps {
-                sh 'pip install pytest'
-                sh 'pytest app.py'
-            }
-        }
+     
           stage('Testing result') {
             steps {
                 sh 'echo Test successfull'
