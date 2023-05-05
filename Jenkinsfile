@@ -25,6 +25,7 @@ pipeline {
                     }
                 }
              }
+             }
          stage(' push image to hub'){
             steps{
                     sh "docker push aayush0307/pythonmyapp:V.${BUILD_NUMBER}"
