@@ -7,16 +7,17 @@ pipeline {
             }
         }
        
-         stage('Generate Artifact') {
+         stage('Testing') {
             steps {
-                sh 'tar -cvf app.tar app.py'
+                sh 'pytest app.py'
             }
         }
-        stage('trigger development') {
+          stage('Testing result') {
             steps {
-                build 'development'
+                sh 'echo Test successfull'
             }
         }
+       
 //         stage('Building Docker Image') {
 //             steps {
 //                 sh 'docker build -t aayush0307/pythonmyapp:V.${BUILD_NUMBER} .'
