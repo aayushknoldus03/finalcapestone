@@ -30,7 +30,6 @@ pipeline {
                     sh "docker push aayush0307/pythonmyapp:V.${BUILD_NUMBER}"
                 }
             }
-        }
         stage('DEploy') {
             steps {
         withCredentials([file(credentialsId: 'newminikubeconnection', variable: 'var1')]) {
