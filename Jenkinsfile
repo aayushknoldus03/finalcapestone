@@ -17,12 +17,16 @@ pipeline {
                 sh 'docker build -t aayush0307/pythonmyapp:V.${BUILD_NUMBER} .'
             }
         }
-         stage(' push image to hub'){
+        stage('Docker Login') {
             steps{
                 script{
                     withCredentials([string(credentialsId: 'dockerhubid', variable: 'dockerhubtext')]) {
                     sh 'docker login -u aayush0307 -p ${dockerhubtext}'    
                     }
+                }
+             }
+         stage(' push image to hub'){
+            steps{
                     sh "docker push aayush0307/pythonmyapp:V.${BUILD_NUMBER}"
                 }
             }
