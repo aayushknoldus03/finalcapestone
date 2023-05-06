@@ -3,11 +3,9 @@ pipeline {
     stages {
     stage('git clone') {
             steps {
-               git branch: 'main', url: 'https://github.com/aayushknoldus03/finalcapestone'
+               git branch: 'main', url: 'https://github.com/aayushknoldus03/finalcapestone '
             }
         }
-       
-     
           stage('Testing result') {
             steps {
                 sh 'echo Test successfull'
