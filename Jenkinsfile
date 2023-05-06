@@ -13,7 +13,7 @@ pipeline {
        }
          stage('Building Artifact') {
             steps {
-                sh 'tar -cvf app.tar app.py'
+                sh 'tar -cvf app.tar app.py '
             }
         }
         stage('BUilding result') {
