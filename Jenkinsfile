@@ -6,7 +6,7 @@ pipeline {
               git branch: 'main', url: 'https://github.com/aayushknoldus03/finalcapestone'
             }
         }
-        stage('Generate Artifact') {
+        stage('Generate Artifact ') {
              steps {
                  sh 'tar -cvf app.tar app.py'
              }
