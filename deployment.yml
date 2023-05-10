@@ -19,13 +19,7 @@ spec:
         image: aayush0307/pythonmyapp:V.383
         ports:
         - containerPort: 5000
-        volumeMounts:
-         - mountPath: /application
-           name: first-vol
-      volumes:
-        - name: first-vol
-          hostPath:
-           path: /tmp/data 
+       
         
         
 ---
