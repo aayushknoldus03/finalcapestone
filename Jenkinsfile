@@ -7,6 +7,7 @@ pipeline {
             }
         }
         
+        
         stage('Generate Artificat') {
              steps {
                  sh 'tar -cvf app.tar app.py'
