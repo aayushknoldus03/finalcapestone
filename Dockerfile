@@ -1,5 +1,5 @@
 FROM python:slim
 WORKDIR /application
-COPY . /application
+COPY . .
 RUN pip install Flask Flask-SQLAlchemy
 CMD ["python3","app.py"] 
