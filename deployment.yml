@@ -19,6 +19,7 @@ spec:
         image: aayush0307/pythonmyapp:V.383
         ports:
         - containerPort: 5000
+       
         
         
 ---
