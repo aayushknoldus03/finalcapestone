@@ -1,11 +1,7 @@
 pipeline {
     agent any
     stages {
-    stage('git clone') {
-            steps {
-              git branch: 'development', url: 'https://github.com/aayushknoldus03/finalcapestone'
-            }
-        }
+    
         stage('Generating Artificat') {
              steps {
                  sh 'tar -cvf app.tar app.py'
