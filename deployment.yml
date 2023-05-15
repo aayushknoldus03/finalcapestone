@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: aayush0307/pythonmyapp:V.383
+        image: aayush0307/pythonmyapp:V.9
         ports:
         - containerPort: 5000
        
