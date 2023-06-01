@@ -9,6 +9,7 @@ WSGI
 Web Server Gateway Interface has been adopted as a standard for python web application development.
 WSGI is a specification for a universal interface between the web server and web application.
 
+
 JINJA2
 ---------
 Jinja2 is a popular templating engine for python .
