@@ -18,6 +18,7 @@ A web templating system combines a template with a certain data source to render
 
 A Jinja template is simply a text file. Jinja can generate any text based format (Html,Xml,CSV,Latex,etc). A jinja template doesn't need to have a specific extension: .html, .xml, or anyother extensions is just fine.
 
+
 Delimeters
 ---------------
 {% ... %}------ statements
